@@ -3,9 +3,9 @@
 
 ## Conference Page
 
-> Description the project.
-> ...
-> ...
+ Description the project..
+
+
 
 ## Getting Started
 ### Setting up this project locally
