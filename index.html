@@ -3,12 +3,122 @@
   <head>
     <meta name=”viewport” content=”width=device-width, initial-scale=1″ charset="UTF-8">
     <link rel="stylesheet" href="css/style.css">
-    <link href='https://fonts.googleapis.com/css?family=Poppins:400,500,700,900' rel='stylesheet'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,500,600,700' rel='stylesheet'>
+    <title>Conference Page</title>
   </head>
   <body onload="initialExec();">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/index.js"></script>
     <div id="container">
+      <div id="header">
+        <div id="nav-banner">
+          <ul id="nav-banner-list">
+            <li id="nav-banner-list-item"><img id="icon-face" src="images/face.png"></li>
+            <li id="nav-banner-list-item"><img id="icon-twitter" src="images/twitter.svg"></li>
+            <li id="nav-banner-list-item">English</li>
+            <li id="nav-banner-list-item">My Page</li>
+            <li id="nav-banner-list-item">Logout</li>
+          </ul>
+        </div>
+        <div id="navigation">
+          <div id="navigation-logo"></div>
+          <ul id="navigation-list">
+            <li id="nav-navigation-list-item"><a href="about.html">About</a></li>
+            <li id="nav-navigation-list-item"><a href="index.html">Program</a></li>
+            <li id="nav-navigation-list-item"><a href="index.html">Join</a></li>
+            <li id="nav-navigation-list-item"><a href="index.html">Sponsor</a></li>
+            <li id="nav-navigation-list-item"><a href="index.html">News</a></li>
+          </ul>
+          <div id="navigation-cccampaing">CC Campaign</div>
+        </div>
+
+        <nav id="hamburg-menu"><button id="hamburg-menu-button" type="button" onclick="hamburgClick()"></button></nav>
+      </div>
+
+      <div id="hero">
+        <div id="hero-superior">
+          <h2 id="hero-superior-title">"Hello! Sharing world"</h2>
+        </div>
+
+        <div id="hero-inferior">
+          <h2 id="hero-inferior-title">CREATIVE COMMONS GLOBAL SUMMIT 2015</h2>
+          <p id="hero-inferior-paraf">A joyful celebration believing in the value of openness and sharing, creating a positive change with people from over 80 countries is taking place in October, in Korea.</p>
+          <h4 id="hero-inferior-date">2015.10.15(THU)-16(FRI)</h4>
+          <h5 id="hero-inferior-mention">@ National Museum of Korea, Art Center Nabiand more</h5>
+
+        </div>
+      </div>
+
+
+
+      <div id="program">
+        <h2 id="program-title">Main Program</h2>
+
+        <ul id="program-list">
+          <li id="program-list-item">
+            <img id="program-list-item-image" src="images/program_icon_01 1.png">
+            <h5 id="program-list-item-title">Lecture</h5>
+            <p id="program-list-item-paraf">Listen to the speakers from various countries about the messages of sharing and opening.</p>
+          </li>
+
+          <li id="program-list-item">
+            <img id="program-list-item-image" src="images/program_icon_02 1.png">
+            <h5 id="program-list-item-title">CC Exhibition</h5>
+            <p id="program-list-item-paraf">Appreciate various creations applying CC license of artists, organized from Art Center Nabi</p>
+          </li>
+
+          <li id="program-list-item">
+            <img id="program-list-item-image" src="images/program_icon_03 1.png">
+            <h5 id="program-list-item-title">Forum</h5>
+            <p id="program-list-item-paraf">Have the time to share your thoughts and opinions with experts for each topic.</p>
+          </li>
+
+          <li id="program-list-item">
+            <img id="program-list-item-image" src="images/program_icon_04 1.png">
+            <h5 id="program-list-item-title">Workshop</h5>
+            <p id="program-list-item-paraf">Try creating your own work using open source license rather than just watching at it.</p>
+          </li>
+
+          <li id="program-list-item">
+            <img id="program-list-item-image" src="images/program_icon_05 1.png">
+            <h5 id="program-list-item-title">CC Ignite</h5>
+            <p id="program-list-item-paraf">Get opportunities to network with CC affiliates around the world, also after the summit.</p>
+          </li>
+
+        </ul>
+
+        <h4 id="program-end">SEE THE WHOLE PROGRAM</h4>
+        <button id="program-button" type="button" onclick="click()">Join CC Global Summit 2015</button>
+      </div>
+
+
+
+      <div id="speakers-section"></div>
+
+      <div id="partners">
+        <h5 id="partners-title">Partner</h5>
+
+        <ul id="partners-list">
+          <li><img src="images/mozilla 1.png"></li>
+          <li><img src="images/googlekorea 1.png"></li>
+          <li><img src="images/naver 1.png"></li>
+          <li><img src="images/daumkakaologo 1.png"></li>
+          <li><img src="images/airbnb 1.png"></li>
+        </ul>
+
+      </div>
+
+      <div id="footer">
+
+        <img src="images/cck-logo1 1.png">
+
+        <div id="footer-section">
+          <h6>2015 Creative Commons Korea. Some Rights Reserved.</h6>
+          <h6>달리 정하지 않은 웹사이트의 모든 내용은 크리에이티브 커먼즈 저작자표시 2.0 대한민국 라이선스에 따라 이용할 수 있습니다.
+자세한 이용기능 내용과 허락조건은 http://creativecommons.org/licences/by/2.0/kr 를 보세요.</h6>
+        </div>
+
+      </div>
 
 
 
