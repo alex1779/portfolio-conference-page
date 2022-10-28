@@ -8,19 +8,42 @@
   </head>
   <body onload="initialExec();">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="js/index.js"></script>
+    <script src="js/about.js"></script>
     <div id="container">
       <div id="header">
-        <div id="nav-banner">EITI LEDA</div>
-        <div id="navigation"></div>
+        <div id="nav-banner">
+          <ul id="nav-banner-list">
+            <li id="nav-banner-list-item"><img id="icon-face" src="images/face.png"></li>
+            <li id="nav-banner-list-item"><img id="icon-twitter" src="images/twitter.svg"></li>
+            <li id="nav-banner-list-item">English</li>
+            <li id="nav-banner-list-item">My Page</li>
+            <li id="nav-banner-list-item">Logout</li>
+          </ul>
+        </div>
+        <div id="navigation">
+          <a id="navigation-logo" href="index.html"></a>
+          <ul id="navigation-list">
+            <li id="nav-navigation-list-item"><a href="about.html">About</a></li>
+            <li id="nav-navigation-list-item"><a href="index.html">Program</a></li>
+            <li id="nav-navigation-list-item"><a href="index.html">Join</a></li>
+            <li id="nav-navigation-list-item"><a href="index.html">Sponsor</a></li>
+            <li id="nav-navigation-list-item"><a href="index.html">News</a></li>
+          </ul>
+          <div id="navigation-cccampaing">CC Campaign</div>
+        </div>
         <nav id="hamburg-menu"><button id="hamburg-menu-button" type="button" onclick="hamburgClick()"></button></nav>
       </div>
 
-      <div id="hero"></div>
-      <div id="program"></div>
-      <div id="speakers-section"></div>
-      <div id="partners"></div>
-      <div id="footer"></div>
+
+
+      <div id="footer">
+        <img src="images/cck-logo1 1.png">
+        <div id="footer-section">
+          <h6>2015 Creative Commons Korea. Some Rights Reserved.</h6>
+          <h6>달리 정하지 않은 웹사이트의 모든 내용은 크리에이티브 커먼즈 저작자표시 2.0 대한민국 라이선스에 따라 이용할 수 있습니다. 자세한 이용기능 내용과 허락조건은 http://creativecommons.org/licences/by/2.0/kr 를 보세요.</h6>
+        </div>
+      </div>
+
     <!-- end of container -->
     </div>
   </body>
