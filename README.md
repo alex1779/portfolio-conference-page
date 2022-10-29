@@ -36,7 +36,7 @@ Original design idea by Cindy Shin in Behance. Creative Commons license of the d
 
 ## Page Link
 
-[Online Version](https://alex1779.github.io/personal-portfolio-site/)
+[Online Version](https://alex1779.github.io/portfolio-conference-page/)
 
 
 ## Built With
@@ -55,9 +55,8 @@ Original design idea by Cindy Shin in Behance. Creative Commons license of the d
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+Original design idea by Cindy Shin in Behance. Creative Commons license of the design .
+
 
 ## 📝 License
 

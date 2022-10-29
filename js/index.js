@@ -57,10 +57,22 @@ function hamburgClick() {
 }
 
 function initialExec() {
-  const bigString = '<h5 id="speakers-title">Featured Speakers</h5> <ul id="speakers-list">  <li> <img src="images/speakers/speaker_01.png"> <div id="speakers-group">  <h4>Yokai Benkler</h4>  <h5>Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School</h5>  <h6>Benkler studies commons-based peer production, and published his seminal book, The Wealth of Networks in 2006</h6> </div>  </li>  <li> <img src="images/speakers/speaker_02.png"> <div id="speakers-group">  <h4>Kilnam Chon</h4>  <h5>...</h5>  <h6>Kilnam Chon helped bring the internet to Asia and is an outspoken advocate for the open web and digital com-mons. In 2012. he was inducted into the inaugural class of the Internet Society’s (ISOC) Internet Hall of Fame</h6> </div>  </li>  <li> <img src="images/speakers/speaker_03.png"> <div id="speakers-group">  <h4>SohYeong Noh</h4>  <h5>Director of Art Centre Nabi and a board member of CC Korea</h5>  <h6>As the main venue for new media art production in Korea, Nabi promotes cross-disciplinary collaboration and understanding among science technology, humanities, and the arts.</h6> </div>  </li>  <li> <img src="images/speakers/speaker_04.png"> <div id="speakers-group">  <h4>Julia Leda</h4>  <h5>President of Young Pirates of Europe</h5>  <h6>European ingetration, political democracy and participation of youth through online as her major condern, Reda’s report outlining potential changes to EU copyright law was approved by the Parliament in July</h6> </div>  </li>  <li> <img src="images/speakers/speaker_05.png"> <div id="speakers-group">  <h4>Lila tretikov</h4>  <h5>Executive Director of the Wikimedia Foundation</h5>  <h6>Lila Tretikov is the Executive of the Wikimedia Foundation, the nonprofit organization that operates Wikipedia. Wikipedia is freely available in 290 languag-es and used by nearly half a billion people around the world every month.</h6> </div>  </li>  <li> <img src="images/speakers/speaker_06.png"> <div id="speakers-group">  <h4>Ryan Merkley</h4>  <h5>CEO of Creativve Commons, ex COO of the Mozilla Foundation</h5>  <h6>Ryan had been leading open-source projects at the Mozilla Foundation such as the open-source move-ment</h6> </div>  </li> </ul> <button id="speakers-button" type="button" onclick="clickSpeakersMore()"> </button>';
-
+  const speakerslist = '<h5 id="speakers-title">Featured Speakers</h5> <ul id="speakers-list"> </ul> <button id="speakers-button" type="button" onclick="clickSpeakersMore()"> </button>';
   const speakersSection = document.getElementById('speakers-section');
-  speakersSection.innerHTML += bigString;
+  speakersSection.innerHTML += speakerslist;
+
+  const items = ['<li> <img src="images/speakers/speaker_01.png"> <div id="speakers-group">  <h4>Yokai Benkler</h4>  <h5>Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School</h5>  <h6>Benkler studies commons-based peer production, and published his seminal book, The Wealth of Networks in 2006</h6> </div>  </li> ',
+    '<li> <img src="images/speakers/speaker_02.png"> <div id="speakers-group">  <h4>Kilnam Chon</h4>  <h5>...</h5>  <h6>Kilnam Chon helped bring the internet to Asia and is an outspoken advocate for the open web and digital com-mons. In 2012. he was inducted into the inaugural class of the Internet Society’s (ISOC) Internet Hall of Fame</h6> </div>  </li>',
+    '<li> <img src="images/speakers/speaker_03.png"> <div id="speakers-group">  <h4>SohYeong Noh</h4>  <h5>Director of Art Centre Nabi and a board member of CC Korea</h5>  <h6>As the main venue for new media art production in Korea, Nabi promotes cross-disciplinary collaboration and understanding among science technology, humanities, and the arts.</h6> </div>  </li>',
+    '<li> <img src="images/speakers/speaker_04.png"> <div id="speakers-group">  <h4>Julia Leda</h4>  <h5>President of Young Pirates of Europe</h5>  <h6>European ingetration, political democracy and participation of youth through online as her major condern, Reda’s report outlining potential changes to EU copyright law was approved by the Parliament in July</h6> </div>  </li>',
+    '<li> <img src="images/speakers/speaker_05.png"> <div id="speakers-group">  <h4>Lila tretikov</h4>  <h5>Executive Director of the Wikimedia Foundation</h5>  <h6>Lila Tretikov is the Executive of the Wikimedia Foundation, the nonprofit organization that operates Wikipedia. Wikipedia is freely available in 290 languag-es and used by nearly half a billion people around the world every month.</h6> </div>  </li>',
+    '<li> <img src="images/speakers/speaker_06.png"> <div id="speakers-group">  <h4>Ryan Merkley</h4>  <h5>CEO of Creativve Commons, ex COO of the Mozilla Foundation</h5>  <h6>Ryan had been leading open-source projects at the Mozilla Foundation such as the open-source move-ment</h6> </div>  </li>'];
+
+  const speakerslistObj = document.getElementById('speakers-list');
+  for (let i = 0; i < items.length; i += 1) {
+    speakerslistObj.innerHTML += items[i];
+  }
+
   const dataStorage = {
     speakersListExpanded: false,
   };
