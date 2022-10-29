@@ -43,7 +43,7 @@ ul {
   left: 0;
   background: transparent;
   border: none;
-  background-image: url("../images/background-mobile.png");
+  background-image: url("../images/background-mobile.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -72,7 +72,6 @@ ul {
   top: 0;
   left: 0;
   background: transparent;
-  border: none;
   border: none;
   background-image: url("../images/hamburg-menu.jpg");
   background-size: cover;
@@ -121,7 +120,7 @@ ul {
 
 #hero-inferior-title {
   background: transparent;
-  margin: 1vw 0vw 18vw 4vw;
+  margin: 1vw 0 18vw 4vw;
   text-align: start;
   color: red;
   font-weight: bold;
@@ -131,7 +130,7 @@ ul {
 
 #hero-inferior-paraf {
   background: transparent;
-  padding: 0vw 7vw 4vw 7vw;
+  padding: 0 7vw 4vw 7vw;
   margin: 0;
   text-align: start;
   color: #868686;
@@ -143,7 +142,7 @@ ul {
 
 #hero-inferior-date {
   background: transparent;
-  padding: 5vw 0vw 0vw 4vw;
+  padding: 5vw 0 0 4vw;
   margin: 0;
   text-align: start;
   color: #868686;
@@ -155,7 +154,7 @@ ul {
 
 #hero-inferior-mention {
   background: transparent;
-  padding: 5vw 0vw 0vw 4vw;
+  padding: 5vw 0 0 4vw;
   margin: 0;
   text-align: start;
   color: #868686;
@@ -180,7 +179,7 @@ ul {
 
 #program-title {
   background: transparent;
-  padding: 8vw 0vw 5vw 0vw;
+  padding: 8vw 0 5vw 0;
   margin: 0;
   text-align: center;
   color: white;
@@ -192,7 +191,7 @@ ul {
 
 #program-list {
   background: transparent;
-  padding: 6vw 0vw 0vw 0vw;
+  padding: 6vw 0 0 0;
   margin: 0;
   border: none;
   display: flex;
@@ -201,11 +200,10 @@ ul {
   align-items: center;
 }
 
-#program-list > li{
+#program-list > li {
   width: 95%;
   aspect-ratio: 355 /82;
   margin: 0.8vw;
-  background: transparent;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -217,6 +215,19 @@ ul {
 #program-list > li > img {
   height: 50%;
   aspect-ratio: 59 /53;
+}
+
+#speakers-group > h5 {
+  width: 100%;
+  padding: 0 0 0 0;
+  text-align: start;
+  color: #f78c89;
+  margin: 0;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 3vw;
+  line-height: 3vw;
+  border: none;
 }
 
 #program-list > li > h5 {
@@ -248,7 +259,7 @@ ul {
 #program-button {
   background: #ff4f38;
   padding: 5vw 5vw 8vw 5vw;
-  margin: 10vw 0vw 0vw 13vw;
+  margin: 10vw 0 0 13vw;
   color: white;
   font-weight: 600;
   font-size: 4.5vw;
@@ -270,7 +281,7 @@ ul {
 
 #speakers-title {
   background: transparent;
-  padding: 9vw 0vw 13vw 1vw;
+  padding: 9vw 0 13vw 1vw;
   margin: 0;
   text-align: center;
   color: black;
@@ -282,9 +293,9 @@ ul {
 
 #speakers-list {
   background: transparent;
-  padding: 0vw 0vw 0vw 0vw;
+  padding: 0 0 0 0;
   width: 100%;
-  aspect-ratio: 1.3 / 1;
+  aspect-ratio: 13 / 10;
   margin: 0;
   border: none;
   display: grid;
@@ -295,10 +306,10 @@ ul {
   overflow-y: hidden;
 }
 
-#speakers-list > li{
+#speakers-list > li {
   width: 100%;
-  padding: 0vw 0vw 0vw 3vw;
-  margin: 0vw;
+  padding: 0 0 0 3vw;
+  margin: 0;
   background: transparent;
   display: flex;
   flex-direction: row;
@@ -308,14 +319,14 @@ ul {
 
 #speakers-list > li > img {
   width: 28vw;
-  padding: 0vw 0vw 0vw 0vw;
+  padding: 0 0 0 0;
   height: inherit;
 }
 
 #speakers-group {
   width: 100%;
-  padding: 0vw 1vw 0vw 4vw;
-  margin: 0vw;
+  padding: 0 1vw 0 4vw;
+  margin: 0;
   background: transparent;
   display: flex;
   flex-direction: column;
@@ -326,7 +337,7 @@ ul {
 
 #speakers-group > h4 {
   width: 100%;
-  padding: 0vw 0vw 0vw 0vw;
+  padding: 0 0 0 0;
   text-align: start;
   color: black;
   margin: 0;
@@ -336,22 +347,9 @@ ul {
   border: none;
 }
 
-#speakers-group > h5 {
-  width: 100%;
-  padding: 0vw 0vw 0vw 0vw;
-  text-align: start;
-  color: #f78c89;
-  margin: 0;
-  font-weight: 700;
-  font-style: italic;
-  font-size: 3vw;
-  line-height: 3vw;
-  border: none;
-}
-
 #speakers-group > h6 {
   width: 100%;
-  padding: 0vw 0vw 0vw 0vw;
+  padding: 0 0 0 0;
   text-align: start;
   color: black;
   margin: 0;
@@ -364,7 +362,7 @@ ul {
 #speakers-button {
   width: 95vw;
   padding: 5vw 5vw 5vw 5vw;
-  margin: 10vw 0vw 10vw 3vw;
+  margin: 10vw 0 10vw 3vw;
   border: none;
   background-image: url("../images/more.png");
   background-size: cover;
@@ -445,7 +443,6 @@ ul {
     background-image: url("../images/base-container-desktop.jpg");
     background-size: cover;
     background-position: center;
-
   }
 
   #header {
@@ -468,7 +465,6 @@ ul {
   #nav-banner-list {
     height: 100%;
     aspect-ratio: 210 / 25;
-    display: block;
     background: transparent;
     padding: 0;
     margin: 0;
@@ -477,7 +473,7 @@ ul {
     flex-direction: row;
     align-items: center;
     align-self: center;
-    justify-content:space-between;
+    justify-content: space-between;
   }
 
   #nav-banner-list > li {
@@ -526,6 +522,7 @@ ul {
     background: transparent;
     border: 1px solid red;
   }
+
   #nav-banner-my-page {
     width: 100%;
     aspect-ratio: 1440 / 30;
@@ -533,6 +530,7 @@ ul {
     background: transparent;
     border: 1px solid red;
   }
+
   #nav-banner-logout {
     width: 100%;
     aspect-ratio: 1440 / 30;
@@ -544,7 +542,6 @@ ul {
   #navigation {
     width: 100%;
     aspect-ratio: 1440 / 75;
-    display: block;
     background: white;
     border: none;
     display: flex;
@@ -567,7 +564,6 @@ ul {
   #navigation-list {
     height: 100%;
     aspect-ratio: 160 / 25;
-    display: block;
     background: transparent;
     padding: 0;
     margin: 0;
@@ -576,7 +572,7 @@ ul {
     flex-direction: row;
     align-items: center;
     align-self: center;
-    justify-content:space-between;
+    justify-content: space-between;
   }
 
   #navigation-list > li > a {
@@ -593,11 +589,9 @@ ul {
   }
 
   #navigation-cccampaing {
-    position: absolute;
-    height: 48%;
-    aspect-ratio: 2.41 / 1;
-    top: 40%;
-    left: 78%;
+    height: 70%;
+    padding: 0 2vw 0 2vw;
+    margin: 0 0 0 5vw;
     border: 0.3vw solid green;
     text-align: center;
     color: green;
@@ -628,7 +622,7 @@ ul {
     aspect-ratio: 100 / 12;
     background: transparent;
     border: none;
-    background-image: url("../images/background-desktop.png");
+    background-image: url("../images/hero-superior-desktop.jpg");
     background-size: cover;
     background-position: center;
   }
@@ -638,7 +632,7 @@ ul {
     background: transparent;
     margin: 0;
     text-align: center;
-    color: black;
+    color: orangered;
     font-weight: 400;
     font-size: 3.35vw;
     line-height: 270%;
@@ -663,15 +657,16 @@ ul {
     padding: 1vw 18vw 1vw 14vw;
     margin: 0;
     text-align: start;
-    color: red;
     font-weight: lighter;
     font-size: 5vw;
     line-height: 5vw;
+    color: #ec5242;
+    font-family: Paytone One, sans-serif;
   }
 
   #hero-inferior-paraf {
     background: transparent;
-    padding: 6.7vw 44vw 0vw 15vw;
+    padding: 6.7vw 44vw 0 15vw;
     margin: 0;
     text-align: start;
     color: #868686;
@@ -683,7 +678,7 @@ ul {
 
   #hero-inferior-date {
     background: transparent;
-    padding: 2.6vw 44vw 0vw 14vw;
+    padding: 2.6vw 44vw 0 14vw;
     margin: 0;
     text-align: start;
     color: #868686;
@@ -695,7 +690,7 @@ ul {
 
   #hero-inferior-mention {
     background: transparent;
-    padding: 0vw 44vw 0vw 14vw;
+    padding: 0 44vw 0 14vw;
     margin: 0;
     text-align: start;
     color: #868686;
@@ -719,7 +714,7 @@ ul {
 
   #program-title {
     background: transparent;
-    padding: 6vw 0vw 1vw 0vw;
+    padding: 6vw 0 1vw 0;
     margin: 0;
     text-align: center;
     color: white;
@@ -731,7 +726,7 @@ ul {
 
   #program-list {
     background: transparent;
-    padding: 5vw 0vw 0vw 0vw;
+    padding: 5vw 0 0 0;
     margin: 0;
     border: none;
     display: flex;
@@ -740,17 +735,38 @@ ul {
     align-items: center;
   }
 
-  #program-list > li{
+  #program-list > li {
     width: 13.8%;
     aspect-ratio: 200 /231;
     margin: 0.15vw;
-    background: transparent;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     background: #3b3e45;
     mix-blend-mode: color-dodge;
+  }
+
+  #speakers-list > li {
+    width: 36vw;
+    aspect-ratio: 3 / 1;
+    padding: 0 0 0 0;
+    margin: 1vw;
+    background: #f8f8f8;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #partners-list > li {
+    width: 15%;
+    margin: 1vw;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
   }
 
   #program-list > li:hover {
@@ -761,10 +777,30 @@ ul {
     border-radius: 1vw;
   }
 
+  #footer > img {
+    padding: 7vw 0 7vw 0;
+    margin: 0 3vw 0 15vw;
+    width: 18vw;
+    aspect-ratio: 500 / 86;
+    height: inherit;
+  }
+
   #program-list > li > img {
     width: 35%;
     aspect-ratio: 59 /53;
     height: inherit;
+  }
+
+  #speakers-group > h5 {
+    width: 100%;
+    padding: 0 0 0 0;
+    text-align: start;
+    color: #f78c89;
+    margin: 0;
+    font-weight: 700;
+    font-size: 1vw;
+    line-height: 1.9vw;
+    border: none;
   }
 
   #program-list > li > h5 {
@@ -792,7 +828,7 @@ ul {
   #program-end {
     width: 100%;
     background: transparent;
-    padding: 5vw 0vw 1vw 0vw;
+    padding: 5vw 0 1vw 0;
     margin: 0;
     text-align: center;
     color: white;
@@ -824,7 +860,7 @@ ul {
 
   #speakers-title {
     background: transparent;
-    padding: 6vw 0vw 4vw 0vw;
+    padding: 6vw 0 4vw 0;
     margin: 0;
     text-align: center;
     color: black;
@@ -836,10 +872,9 @@ ul {
 
   #speakers-list {
     width: 74vw;
-    aspect-ratio:  inherit;
     background: transparent;
     aspect-ratio: inherit;
-    padding: 0vw 0vw 0vw 30vw;
+    padding: 0 0 0 30vw;
     margin: 0;
     border: none;
     display: grid;
@@ -850,18 +885,6 @@ ul {
     overflow-y: inherit;
   }
 
-  #speakers-list > li{
-    width: 36vw;
-    aspect-ratio: 3 / 1;
-    padding: 0vw 0vw 0vw 0vw;
-    margin: 1vw;
-    background: #f8f8f8;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-
   #speakers-list > li > img {
     width: 12vw;
     height: inherit;
@@ -869,8 +892,8 @@ ul {
 
   #speakers-group {
     width: 21vw;
-    padding: 0vw 0vw 0vw 0vw;
-    margin: 0vw;
+    padding: 0 0 0 0;
+    margin: 0;
     background: transparent;
     display: flex;
     flex-direction: column;
@@ -881,7 +904,7 @@ ul {
 
   #speakers-group > h4 {
     width: 100%;
-    padding: 0vw 0vw 0vw 0vw;
+    padding: 0 0 0 0;
     text-align: start;
     color: black;
     margin: 0;
@@ -891,21 +914,9 @@ ul {
     border: none;
   }
 
-  #speakers-group > h5 {
-    width: 100%;
-    padding: 0vw 0vw 0vw 0vw;
-    text-align: start;
-    color: #f78c89;
-    margin: 0;
-    font-weight: 700;
-    font-size: 1vw;
-    line-height: 1.9vw;
-    border: none;
-  }
-
   #speakers-group > h6 {
     width: 100%;
-    padding: 0vw 0vw 0vw 0vw;
+    padding: 0 0 0 0;
     text-align: start;
     color: black;
     margin: 0;
@@ -931,7 +942,7 @@ ul {
 
   #partners-title {
     background: transparent;
-    padding: 3vw 0vw 1vw 0vw;
+    padding: 3vw 0 1vw 0;
     margin: 0;
     text-align: center;
     color: #868686;
@@ -943,22 +954,12 @@ ul {
 
   #partners-list {
     background: transparent;
-    padding: 3vw 0vw 0vw 0vw;
+    padding: 3vw 0 0 0;
     margin: 0;
     border: none;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
-  }
-
-  #partners-list > li{
-    width: 15%;
-    margin: 1vw;
-    background: transparent;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     align-items: center;
   }
 
@@ -979,18 +980,10 @@ ul {
     background: #f2f2f2;
   }
 
-  #footer > img {
-    padding: 7vw 0vw 7vw 0vw;
-    margin: 0vw 3vw 0vw 15vw;
-    width: 18vw;
-    aspect-ratio: 500 / 86;
-    height: inherit;
-  }
-
   #footer-section {
     width: 50vw;
-    padding: 10vw 0vw 7vw 0vw;
-    margin: 0vw 0vw 0vw 0vw;
+    padding: 10vw 0 7vw 0;
+    margin: 0 0 0 0;
     background: transparent;
     display: flex;
     flex-direction: column;
@@ -1009,5 +1002,4 @@ ul {
     border: none;
     margin-bottom: 1.9vw;
   }
-
 }
