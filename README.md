@@ -18,16 +18,21 @@
 ## Project Tasks List (Working-in-progress)
 
 - [X] Set up the repository and tools.
-- [ ] Choose the topic for your website.
-- [ ] Choose images, text, icons,
-- [ ] Create the 2 pages for mobile.
-- [ ] Deploy the project.
-- [ ] Adapt the 2 pages to desktop.
-- [ ] Implement the user interactions: link, mobile menu.
-- [ ] Implement the section "Featured speakers" with dynamic HTML.
-- [ ] Deploy the project and check to make sure everything works as planned.
-- [ ] Record a video describing your project.
-- [ ] Create a good README and pull request description.n
+- [X] Choose the topic for your website.
+- [X] Choose images, text, icons,
+- [X] Create the 2 pages for mobile.
+- [X] Deploy the project.
+- [X] Adapt the 2 pages to desktop.
+- [X] Implement the user interactions: link, mobile menu.
+- [X] Implement the section "Featured speakers" with dynamic HTML.
+- [X] Deploy the project and check to make sure everything works as planned.
+- [X] Record a video describing your project.
+- [X] Create a good README and pull request description
+
+
+## CREDITS
+Original design idea by Cindy Shin in Behance. Creative Commons license of the design .
+
 
 ## Page Link
 
