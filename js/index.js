@@ -9,8 +9,8 @@ function restoreView() {
     document.querySelector('#partners').style.display = 'none';
     document.querySelector('#footer').style.display = 'none';
   } else {
-    document.querySelector('#partners').style.display = 'flex';
-    document.querySelector('#footer').style.display = 'flex';
+    document.querySelector('#partners').style.display = 'none';
+    document.querySelector('#footer').style.display = 'none';
   }
 }
 
@@ -60,17 +60,67 @@ function initialExec() {
   const speakerslist = '<h5 id="speakers-title">Featured Speakers</h5> <ul id="speakers-list"> </ul> <button id="speakers-button" type="button" onclick="clickSpeakersMore()"> </button>';
   const speakersSection = document.getElementById('speakers-section');
   speakersSection.innerHTML += speakerslist;
-
-  const items = ['<li> <img src="images/speakers/speaker_01.png"> <div id="speakers-group">  <h4>Yokai Benkler</h4>  <h5>Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School</h5>  <h6>Benkler studies commons-based peer production, and published his seminal book, The Wealth of Networks in 2006</h6> </div>  </li> ',
-    '<li> <img src="images/speakers/speaker_02.png"> <div id="speakers-group">  <h4>Kilnam Chon</h4>  <h5>...</h5>  <h6>Kilnam Chon helped bring the internet to Asia and is an outspoken advocate for the open web and digital com-mons. In 2012. he was inducted into the inaugural class of the Internet Society’s (ISOC) Internet Hall of Fame</h6> </div>  </li>',
-    '<li> <img src="images/speakers/speaker_03.png"> <div id="speakers-group">  <h4>SohYeong Noh</h4>  <h5>Director of Art Centre Nabi and a board member of CC Korea</h5>  <h6>As the main venue for new media art production in Korea, Nabi promotes cross-disciplinary collaboration and understanding among science technology, humanities, and the arts.</h6> </div>  </li>',
-    '<li> <img src="images/speakers/speaker_04.png"> <div id="speakers-group">  <h4>Julia Leda</h4>  <h5>President of Young Pirates of Europe</h5>  <h6>European ingetration, political democracy and participation of youth through online as her major condern, Reda’s report outlining potential changes to EU copyright law was approved by the Parliament in July</h6> </div>  </li>',
-    '<li> <img src="images/speakers/speaker_05.png"> <div id="speakers-group">  <h4>Lila tretikov</h4>  <h5>Executive Director of the Wikimedia Foundation</h5>  <h6>Lila Tretikov is the Executive of the Wikimedia Foundation, the nonprofit organization that operates Wikipedia. Wikipedia is freely available in 290 languag-es and used by nearly half a billion people around the world every month.</h6> </div>  </li>',
-    '<li> <img src="images/speakers/speaker_06.png"> <div id="speakers-group">  <h4>Ryan Merkley</h4>  <h5>CEO of Creativve Commons, ex COO of the Mozilla Foundation</h5>  <h6>Ryan had been leading open-source projects at the Mozilla Foundation such as the open-source move-ment</h6> </div>  </li>'];
+  const speakers = {
+    speaker1: {
+      name: 'Yokai Benkler',
+      role: 'Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School',
+      description: 'Benkler studies commons-based peer production, and published his seminal book, The Wealth of Networks in 2006',
+      photo: 'images/speakers/speaker_01.png',
+    },
+    speaker2: {
+      name: 'Kilnam Chon',
+      role: '...',
+      description: 'Kilnam Chon helped bring the internet to Asia and is an outspoken advocate for the open web and digital com-mons. In 2012. he was inducted into the inaugural class of the Internet Society’s (ISOC) Internet Hall of Fame',
+      photo: 'images/speakers/speaker_02.png',
+    },
+    speaker3: {
+      name: 'SohYeong Noh',
+      role: 'Director of Art Centre Nabi and a board member of CC Korea',
+      description: 'As the main venue for new media art production in Korea, Nabi promotes cross-disciplinary collaboration and understanding among science technology, humanities, and the arts.',
+      photo: 'images/speakers/speaker_03.png',
+    },
+    speaker4: {
+      name: 'Julia Leda',
+      role: 'President of Young Pirates of Europe',
+      description: 'European ingetration, political democracy and participation of youth through online as her major condern, Reda’s report outlining potential changes to EU copyright law was approved by the Parliament in July.',
+      photo: 'images/speakers/speaker_04.png',
+    },
+    speaker5: {
+      name: 'Lila tretikov',
+      role: 'Executive Director of the Wikimedia Foundation',
+      description: 'Lila Tretikov is the Executive of the Wikimedia Foundation, the nonprofit organization that operates Wikipedia. Wikipedia is freely available in 290 languag-es and used by nearly half a billion people around the world every month.',
+      photo: 'images/speakers/speaker_05.png',
+    },
+    speaker6: {
+      name: 'Ryan Merkley',
+      role: 'CEO of Creativve Commons, ex COO of the Mozilla Foundation',
+      description: 'Ryan had been leading open-source projects at the Mozilla Foundation such as the open-source move-ment.',
+      photo: 'images/speakers/speaker_06.png',
+    },
+  };
 
   const speakerslistObj = document.getElementById('speakers-list');
-  for (let i = 0; i < items.length; i += 1) {
-    speakerslistObj.innerHTML += items[i];
+  for (let i = 0; i < Object.keys(speakers).length; i += 1) {
+    const li = document.createElement('li');
+    const img = document.createElement('img');
+    img.setAttribute('src', `images/speakers/speaker_0${String(i + 1)}.png`);
+    const div = document.createElement('div');
+    div.setAttribute('id', 'speakers-group');
+    const h4 = document.createElement('h4');
+    const h4c = document.createTextNode(speakers[`speaker${String(i + 1)}`].name);
+    const h5 = document.createElement('h5');
+    const h5c = document.createTextNode(speakers[`speaker${String(i + 1)}`].role);
+    const h6 = document.createElement('h6');
+    const h6c = document.createTextNode(speakers[`speaker${String(i + 1)}`].description);
+    h4.appendChild(h4c);
+    h5.appendChild(h5c);
+    h6.appendChild(h6c);
+    div.appendChild(h4);
+    div.appendChild(h5);
+    div.appendChild(h6);
+    li.appendChild(img);
+    li.appendChild(div);
+    speakerslistObj.appendChild(li);
   }
 
   const dataStorage = {

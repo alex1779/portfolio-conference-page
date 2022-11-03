@@ -73,7 +73,7 @@ ul {
   left: 0;
   background: transparent;
   border: none;
-  background-image: url("../images/hamburg-menu.jpg");
+  background-image: url("../images/hamburg-menu.png");
   background-size: cover;
   background-position: center;
   cursor: pointer;
@@ -100,7 +100,7 @@ ul {
   background: transparent;
   margin: 0;
   text-align: center;
-  color: green;
+  color: orangered;
   font-weight: 400;
   font-size: 5.4vw;
   line-height: 90%;
@@ -122,10 +122,11 @@ ul {
   background: transparent;
   margin: 1vw 0 18vw 4vw;
   text-align: start;
-  color: red;
+  color: #ec5242;
   font-weight: bold;
   font-size: 8vw;
   line-height: 8vw;
+  font-family: Paytone One, sans-serif;
 }
 
 #hero-inferior-paraf {
@@ -561,6 +562,11 @@ ul {
     margin-left: 14%;
   }
 
+  #navigation-logo:hover {
+    border: 0.1vw solid lightgray;
+    transform: scale(1.05);
+  }
+
   #navigation-list {
     height: 100%;
     aspect-ratio: 160 / 25;
@@ -586,6 +592,7 @@ ul {
 
   #navigation-list > li > a:hover {
     color: #f07f7e;
+    font-size: 1.05vw;
   }
 
   #navigation-cccampaing {

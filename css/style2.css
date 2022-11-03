@@ -500,6 +500,11 @@ ul {
     margin-left: 14%;
   }
 
+  #navigation-logo:hover {
+    border: 0.1vw solid lightgray;
+    transform: scale(1.05);
+  }
+
   #navigation-list {
     height: 100%;
     aspect-ratio: 160 / 25;
@@ -525,10 +530,12 @@ ul {
 
   #navigation-list > li:nth-child(1) > a {
     color: #f07f7e;
+    font-size: 1.05vw;
   }
 
   #navigation-list > li > a:hover {
     color: #f07f7e;
+    font-size: 1.05vw;
   }
 
   #navigation-cccampaing {
